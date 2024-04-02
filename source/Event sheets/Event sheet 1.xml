@@ -1,0 +1,2143 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="866781441197281">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="944256484546623" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set web font" sid="458936266143529" type="Text">
+                    <param id="0" name="Family name">&quot;Comic Neue&quot;</param>
+                    <param id="1" name="CSS URL">&quot;font.css&quot;</param>
+                </action>
+                <action id="-10" name="Set value" sid="334935256149393" type="Globals">
+                    <param id="0" name="Instance variable">Gamestate</param>
+                    <param id="1" name="Value">&quot;Menu&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="102217876544700">
+            <conditions>
+                <condition id="-18" name="On created" sid="778571556964208" type="Text2" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set web font" sid="467892717178178" type="Text2">
+                    <param id="0" name="Family name">&quot;Comic Neue&quot;</param>
+                    <param id="1" name="CSS URL">&quot;font.css&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="572945353053776">
+            <conditions>
+                <condition id="-18" name="On created" sid="581812949483035" type="Text3" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set web font" sid="910807905660164" type="Text3">
+                    <param id="0" name="Family name">&quot;Comic Neue&quot;</param>
+                    <param id="1" name="CSS URL">&quot;font.css&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="782960108170156">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="190754177102904" type="Keyboard">
+                    <param id="0" name="Key">113</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Reload" sid="789246198714827" type="Browser" />
+            </actions>
+        </event-block>
+        <event-block sid="835429965520957">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="416156680023541" type="Keyboard">
+                    <param id="0" name="Key">114</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Open URL in new window" sid="374589263895344" type="Browser">
+                    <param id="0" name="URL">Browser.URL</param>
+                    <param id="1" name="Tag">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="237034229990332">
+            <conditions>
+                <condition id="0" name="On error" sid="791625594633016" type="Photon" />
+            </conditions>
+            <actions>
+                <action id="0" name="Alert" sid="217287413532335" type="Browser">
+                    <param id="0" name="Message">&quot;Scruffy&apos;s bowels exploded and this came out on the floor: &quot;&amp;newline&amp;Photon.ErrorCode&amp;&quot; &quot;&amp;Photon.ErrorMessage</param>
+                </action>
+                <action id="9" name="Reload" sid="868593937767960" type="Browser" />
+            </actions>
+        </event-block>
+        <event-block sid="246095710684752">
+            <conditions />
+            <actions>
+                <action id="-12" name="Set group active" sid="258716676389218" type="System">
+                    <param id="0" name="Group name">&quot;Game&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-12" name="Set group active" sid="370087268570403" type="System">
+                    <param id="0" name="Group name">&quot;Menu&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-12" name="Set group active" sid="929779862899844" type="System">
+                    <param id="0" name="Group name">&quot;Results&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="558656581262685" type="System">
+                    <param id="0" name="Layer">&quot;Game&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="812688592873897" type="System">
+                    <param id="0" name="Layer">&quot;Menu&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="913383764080932" type="System">
+                    <param id="0" name="Layer">&quot;Results&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="188285993082616">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="554386957753958" type="Globals">
+                    <param id="0" name="Instance variable">Gamestate</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;Menu&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="464776701655106" type="System">
+                    <param id="0" name="Group name">&quot;Menu&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="646049103650793" type="System">
+                    <param id="0" name="Layer">&quot;Menu&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="617654875203252">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="629753717078673" type="Globals">
+                    <param id="0" name="Instance variable">Gamestate</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;Game&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="167148642595222" type="System">
+                    <param id="0" name="Group name">&quot;Game&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="953974831604613" type="System">
+                    <param id="0" name="Layer">&quot;Game&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="905115460696251">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="984022383561715" type="Globals">
+                    <param id="0" name="Instance variable">Gamestate</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;Results&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="827288519000312" type="System">
+                    <param id="0" name="Group name">&quot;Results&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="502643503071495" type="System">
+                    <param id="0" name="Layer">&quot;Results&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" inactive="1" sid="250326495240953" title="Menu">
+            <sub-events>
+                <event-block sid="248135209277403">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="328768525546606" type="Text">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;version&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="274173336161259" type="Text">
+                            <param id="0" name="Text">&quot;v&quot;&amp;projectversion</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="401102556614113">
+                    <conditions>
+                        <condition id="33" name="Is connected to a lobby" sid="242467501495091" type="Photon" />
+                        <condition id="-6" name="Every X seconds" sid="114109646094833" type="System">
+                            <param id="0" name="Interval (seconds)">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="41" name="Request lobby stats" sid="354773310443485" type="Photon" />
+                    </actions>
+                </event-block>
+                <event-block sid="466661470003716">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="300304569797344" type="System" />
+                        <condition id="-7" name="Compare instance variable" sid="497087598953665" type="Button">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;start&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="308295141925289" type="Audio" />
+                        <action id="0" name="Play" sid="101991506914652" type="Audio">
+                            <param id="0" name="Audio file">hi_kappa</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;music&quot;</param>
+                        </action>
+                        <action id="14" name="Disconnect" sid="330878242435770" type="Photon" />
+                        <action id="201" name="Reset" sid="946041910816870" type="Photon" />
+                        <action id="10" name="Connect" sid="509630630177121" type="Photon" />
+                        <action id="3" name="Set enabled" sid="640568870354052" type="Button">
+                            <param id="0" name="Mode">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="398135992259966" type="Button">
+                            <param id="0" name="Text">&quot;connecting...&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="123794807056254">
+                    <conditions>
+                        <condition id="22" name="On join lobby" sid="136619889629707" type="Photon" />
+                        <condition id="-7" name="Compare instance variable" sid="123287321171108" type="Button">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;start&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="41" name="Request lobby stats" sid="479720109402739" type="Photon" />
+                        <action id="3" name="Set enabled" sid="917267043111412" type="Button">
+                            <param id="0" name="Mode">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="475878914806869" type="Button">
+                            <param id="0" name="Text">&quot;LET&apos;S MCFREAKIN LOSE IT&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="145601649000900">
+                    <conditions>
+                        <condition id="0" name="On clicked" sid="561003244092479" type="Button" />
+                        <condition id="-7" name="Compare instance variable" sid="172960992056144" type="Button">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;start&quot;</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="345252991214017" type="TextBox">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;nickname&quot;</param>
+                        </condition>
+                        <condition id="0" inverted="1" name="Compare text" sid="688329830321396" type="TextBox">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                            <param id="1" name="Case">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="101" name="Set my actor name" sid="864879842729635" type="Photon">
+                            <param id="0" name="name">TextBox.Text</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="531451401242901" type="Globals">
+                            <param id="0" name="Instance variable">Nickname</param>
+                            <param id="1" name="Value">TextBox.Text</param>
+                        </action>
+                        <action id="13" name="Join random room" sid="410497566571065" type="Photon">
+                            <param id="0" name="MatchMyRoom">0</param>
+                            <param id="1" name="MatchmakingMode">0</param>
+                            <param id="2" name="LobbyName">&quot;&quot;</param>
+                            <param id="3" name="LobbyType">0</param>
+                            <param id="4" name="SqlLobbyFilter">&quot;&quot;</param>
+                        </action>
+                        <action id="3" name="Set enabled" sid="504880129050052" type="Button">
+                            <param id="0" name="Mode">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="748406010904983" type="Button">
+                            <param id="0" name="Text">&quot;joining...&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="159372389293515">
+                    <conditions>
+                        <condition id="23" name="On joinRandomRoom no match found" sid="835903026023668" type="Photon" />
+                    </conditions>
+                    <actions>
+                        <action id="11" name="Create room" sid="476738628815551" type="Photon">
+                            <param id="0" name="Room">Globals.Nickname</param>
+                            <param id="1" name="LobbyName">&quot;&quot;</param>
+                            <param id="2" name="LobbyType">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="213662519384924">
+                    <conditions>
+                        <condition id="14" name="On join room" sid="117291402609805" type="Photon" />
+                    </conditions>
+                    <actions>
+                        <action id="107" name="Set my room max players" sid="364788843626119" type="Photon">
+                            <param id="0" name="MaxPlayers">10</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="849525903911963" type="Globals">
+                            <param id="0" name="Instance variable">Gamestate</param>
+                            <param id="1" name="Value">&quot;Game&quot;</param>
+                        </action>
+                        <action id="33" name="Stop all" sid="911290693955886" type="Audio" />
+                        <action id="0" name="Play" sid="744727042450849" type="Audio">
+                            <param id="0" name="Audio file">msc_normal</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;music&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="966435481834803" title="Game">
+            <sub-events>
+                <event-block sid="540802390943871">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="194693476740122" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="135943103977901" type="Function">
+                            <param id="0" name="Name">&quot;CreatePlayers&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-10" name="Set value" sid="196293639543227" type="Globals">
+                            <param id="0" name="Instance variable">Humidity</param>
+                            <param id="1" name="Value">37</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="950348832330591" type="Globals">
+                            <param id="0" name="Instance variable">Time</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="280105937178907" type="Globals">
+                            <param id="0" name="Instance variable">Score</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="17" name="Raise event" sid="606377786012314" type="Photon">
+                            <param id="0" name="Code">1</param>
+                            <param id="1" name="Data">Globals.Time&amp;&quot;|&quot;&amp;Globals.Gamestate&amp;&quot;|&quot;&amp;Globals.TimeMax</param>
+                            <param id="2" name="InterestGroup">0</param>
+                            <param id="3" name="Cache">0</param>
+                            <param id="4" name="Receivers">1</param>
+                            <param id="5" name="TargetActors">&quot;&quot;</param>
+                            <param id="6" name="WebForward">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="320147928505941">
+                    <conditions>
+                        <condition id="15" name="On actor join" sid="819883513244708" type="Photon" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="224916751876179" type="Function">
+                            <param id="0" name="Name">&quot;CreatePlayers&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="17" name="Raise event" sid="165874972948861" type="Photon">
+                            <param id="0" name="Code">1</param>
+                            <param id="1" name="Data">Globals.Time&amp;&quot;|&quot;&amp;Globals.Gamestate&amp;&quot;|&quot;&amp;Globals.TimeMax</param>
+                            <param id="2" name="InterestGroup">0</param>
+                            <param id="3" name="Cache">0</param>
+                            <param id="4" name="Receivers">1</param>
+                            <param id="5" name="TargetActors">&quot;&quot;</param>
+                            <param id="6" name="WebForward">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="396416986692048">
+                    <conditions>
+                        <condition id="16" name="On actor leave" sid="199227658186233" type="Photon" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="140768725971502" type="Function">
+                            <param id="0" name="Name">&quot;CreatePlayers&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="17" name="Raise event" sid="457906711899739" type="Photon">
+                            <param id="0" name="Code">1</param>
+                            <param id="1" name="Data">Globals.Time&amp;&quot;|&quot;&amp;Globals.Gamestate&amp;&quot;|&quot;&amp;Globals.TimeMax</param>
+                            <param id="2" name="InterestGroup">0</param>
+                            <param id="3" name="Cache">0</param>
+                            <param id="4" name="Receivers">1</param>
+                            <param id="5" name="TargetActors">&quot;&quot;</param>
+                            <param id="6" name="WebForward">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="283766933570135">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="246052278867842" type="Globals">
+                            <param id="0" name="Instance variable">Score</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">Self.Best</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="373385694787965" type="Globals">
+                            <param id="0" name="Instance variable">Best</param>
+                            <param id="1" name="Value">Self.Score</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="448639156349113">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="187423170005058" type="Globals">
+                            <param id="0" name="Instance variable">Time</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">Globals.TimeMax</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="285194839101316" type="Globals">
+                            <param id="0" name="Instance variable">Gamestate</param>
+                            <param id="1" name="Value">&quot;Results&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="866064387048734">
+                    <conditions />
+                    <actions>
+                        <action id="-10" name="Set value" sid="164158570406662" type="Globals">
+                            <param id="0" name="Instance variable">Humidity</param>
+                            <param id="1" name="Value">clamp(Self.Humidity + choose(-0.1,0,0.1), 36, 38)</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="543367293148304" type="Globals">
+                            <param id="0" name="Instance variable">Time</param>
+                            <param id="1" name="Value">dt</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="829747808535371">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="447341376547603" type="Sprite">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">Photon.MyActorNr</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="425759333904118" type="Sprite">
+                            <param id="0" name="Instance variable">Score</param>
+                            <param id="1" name="Value">Globals.Score</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="179182623177360" type="Sprite">
+                            <param id="0" name="Instance variable">Best</param>
+                            <param id="1" name="Value">Globals.Best</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="938824979950209">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="294765884394489" type="System">
+                            <param id="0" name="Object">Sprite2</param>
+                        </condition>
+                        <condition id="-33" name="Pick by comparison" sid="423773702138132" type="System">
+                            <param id="0" name="Object">Sprite</param>
+                            <param id="1" name="Expression">Sprite.ID</param>
+                            <param id="2" name="Comparison">0</param>
+                            <param id="3" name="Value">Sprite2.id</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="192180892967236" type="Sprite2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="875274585750988">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="827256849314934" type="Sprite">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="377502441518602" type="Sprite2">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="768312571632009">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="532046707289070" type="System">
+                            <param id="0" name="Object">Text2</param>
+                        </condition>
+                        <condition id="-33" name="Pick by comparison" sid="511089803777288" type="System">
+                            <param id="0" name="Object">Sprite</param>
+                            <param id="1" name="Expression">Sprite.ID</param>
+                            <param id="2" name="Comparison">0</param>
+                            <param id="3" name="Value">Text2.ID</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="193220949190593" type="Text2">
+                            <param id="0" name="Text">Photon.ActorNameByNr(Text2.ID)&amp;&quot; (&quot;&amp;Sprite.Score&amp;&quot;)&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="140956963733311">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="784680310666785" type="Text">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;time&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="663588246917159" type="Text">
+                            <param id="0" name="Text">&quot;Time: &quot;&amp;round((clamp(Globals.TimeMax - Globals.Time, 0, Globals.TimeMax))*100)/100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="568633976192223">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="889827359926123" type="Text">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;score&quot;</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="634226925471093" type="Sprite">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">Photon.MyActorNr</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="521927343262803" type="Text">
+                            <param id="0" name="Text">&quot;Dirt Eaten: &quot;&amp;Globals.Score</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="334793914585905">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="655074874170030" type="Text">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;humidity&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="513301636358807" type="Text">
+                            <param id="0" name="Text">&quot;Humidity: &quot;&amp;round((Globals.Humidity)*10)/10&amp;&quot; degrees&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="316433755071934">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="956774284514597" type="Sprite">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">Photon.MyActorNr</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="17" name="Raise event" sid="585968017485861" type="Photon">
+                            <param id="0" name="Code">0</param>
+                            <param id="1" name="Data">Globals.Score&amp;&quot;|&quot;&amp;Globals.Best</param>
+                            <param id="2" name="InterestGroup">0</param>
+                            <param id="3" name="Cache">0</param>
+                            <param id="4" name="Receivers">0</param>
+                            <param id="5" name="TargetActors">&quot;&quot;</param>
+                            <param id="6" name="WebForward">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="726598718863784">
+                    <conditions>
+                        <condition id="14" name="On tap" sid="304136781417257" type="Touch" />
+                        <condition id="0" name="On click" sid="256394924088306" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="17" name="Raise event" sid="838795100500726" type="Photon">
+                            <param id="0" name="Code">2</param>
+                            <param id="1" name="Data">0</param>
+                            <param id="2" name="InterestGroup">0</param>
+                            <param id="3" name="Cache">0</param>
+                            <param id="4" name="Receivers">0</param>
+                            <param id="5" name="TargetActors">&quot;&quot;</param>
+                            <param id="6" name="WebForward">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="632220552412984">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="434496895200817" type="Sprite">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Photon.MyActorNr</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="833452593483350" type="Sprite2">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Photon.MyActorNr</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Add to" sid="488129302519285" type="Globals">
+                                    <param id="0" name="Instance variable">Score</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="3" name="Start" sid="233569245707222" type="Sprite">
+                                    <param id="0" name="From">1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="977963222447459" type="Sprite2">
+                                    <param id="0" name="Frame number">random(0, Self.AnimationFrameCount)</param>
+                                </action>
+                                <action id="0" name="Play" sid="609278211914561" type="Audio">
+                                    <param id="0" name="Audio file">sfx_chomp</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="268922252327525">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="915145647897090" type="System">
+                                            <param id="0" name="First value">int(random(0,50))</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="964938875589778" type="Audio">
+                                            <param id="0" name="Audio file">meatscruffy</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;1&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="556485111329311">
+                    <conditions>
+                        <condition id="0" name="On function" sid="693109961020130" type="Function">
+                            <param id="0" name="Name">&quot;CreatePlayers&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="555253561522046">
+                            <conditions />
+                            <actions>
+                                <action id="-9" name="Destroy" sid="202890289528999" type="Sprite" />
+                                <action id="-9" name="Destroy" sid="603468867651758" type="Sprite2" />
+                                <action id="-9" name="Destroy" sid="142081587706665" type="Text2" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="542525433476642">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="186639624961303" type="System">
+                                    <param id="0" name="First value">Photon.ActorCount</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="651454042629724" type="System">
+                                    <param id="0" name="Object to create">Sprite2</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="X">212+64</param>
+                                    <param id="3" name="Y">116</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="475773040128709" type="Sprite2">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Value">Photon.ActorNrAt(0)</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="948468954700409" type="Sprite2">
+                                    <param id="0" name="Frame number">random(0, Self.AnimationFrameCount)</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="583329156542622" type="System">
+                                    <param id="0" name="Object to create">Sprite</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="X">212</param>
+                                    <param id="3" name="Y">116</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="517608244003466" type="Sprite">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Value">Photon.ActorNrAt(0)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="935394734786884">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="723910915781686" type="System">
+                                    <param id="0" name="First value">Photon.ActorCount</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <variable constant="0" name="x" sid="276272246641765" static="0" type="number">123</variable>
+                                <variable constant="0" name="y" sid="165645804468487" static="0" type="number">116</variable>
+                                <variable constant="0" name="scale" sid="726955288308115" static="0" type="number">1</variable>
+                                <variable constant="0" name="x_offset" sid="601151694035487" static="0" type="number">-1</variable>
+                                <event-block sid="543164103621643">
+                                    <conditions>
+                                        <condition id="-12" name="Repeat" sid="206108156041289" type="System">
+                                            <param id="0" name="Count">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="529325908219788" type="System">
+                                            <param id="0" name="Variable">x_offset</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="336959370636657" type="System">
+                                            <param id="0" name="Object to create">Sprite2</param>
+                                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                                            <param id="2" name="X">x+(168*scale)*x_offset+(64*scale)</param>
+                                            <param id="3" name="Y">y</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="952887093303619" type="Sprite2">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Value">Photon.ActorNrAt(loopindex)</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="652155664073044" type="Sprite2">
+                                            <param id="0" name="Frame number">random(0, Self.AnimationFrameCount)</param>
+                                        </action>
+                                        <action id="9" name="Set scale" sid="683622977128097" type="Sprite2">
+                                            <param id="0" name="Scale">scale</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="955462000066827" type="System">
+                                            <param id="0" name="Object to create">Sprite</param>
+                                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                                            <param id="2" name="X">x+(168*scale)*x_offset</param>
+                                            <param id="3" name="Y">y</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="516874598416749" type="Sprite">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Value">Photon.ActorNrAt(loopindex)</param>
+                                        </action>
+                                        <action id="9" name="Set scale" sid="630007305886634" type="Sprite">
+                                            <param id="0" name="Scale">scale</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="935058546859417" type="System">
+                                            <param id="0" name="Object to create">Text2</param>
+                                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                                            <param id="2" name="X">x+(168*scale)*x_offset</param>
+                                            <param id="3" name="Y">y</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="278293866974902" type="Text2">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Value">Photon.ActorNrAt(loopindex)</param>
+                                        </action>
+                                        <action id="3" name="Set font size" sid="333750476361056" type="Text2">
+                                            <param id="0" name="Size (pt)">12*scale</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="137428138860982">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="216473529974536" type="System">
+                                    <param id="0" name="First value">Photon.ActorCount</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <variable constant="0" name="x" sid="549689875398706" static="0" type="number">87</variable>
+                                <variable constant="0" name="y" sid="698536554853361" static="0" type="number">116</variable>
+                                <variable constant="0" name="scale" sid="286101448277067" static="0" type="number">0.75</variable>
+                                <variable constant="0" name="x_offset" sid="806950983711369" static="0" type="number">-1</variable>
+                                <event-block sid="158679919963719">
+                                    <conditions>
+                                        <condition id="-12" name="Repeat" sid="238563220099708" type="System">
+                                            <param id="0" name="Count">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="364940002674227" type="System">
+                                            <param id="0" name="Variable">x_offset</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="927689422217004" type="System">
+                                            <param id="0" name="Object to create">Sprite2</param>
+                                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                                            <param id="2" name="X">x+(168*scale)*x_offset+(64*scale)</param>
+                                            <param id="3" name="Y">y</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="856601272156941" type="Sprite2">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Value">Photon.ActorNrAt(loopindex)</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="989644167325541" type="Sprite2">
+                                            <param id="0" name="Frame number">random(0, Self.AnimationFrameCount)</param>
+                                        </action>
+                                        <action id="9" name="Set scale" sid="542385826982992" type="Sprite2">
+                                            <param id="0" name="Scale">scale</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="916772764452426" type="System">
+                                            <param id="0" name="Object to create">Sprite</param>
+                                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                                            <param id="2" name="X">x+(168*scale)*x_offset</param>
+                                            <param id="3" name="Y">y</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="515674860022239" type="Sprite">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Value">Photon.ActorNrAt(loopindex)</param>
+                                        </action>
+                                        <action id="9" name="Set scale" sid="831956711631621" type="Sprite">
+                                            <param id="0" name="Scale">scale</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="898520674397404" type="System">
+                                            <param id="0" name="Object to create">Text2</param>
+                                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                                            <param id="2" name="X">x+(168*scale)*x_offset</param>
+                                            <param id="3" name="Y">y</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="713626761709553" type="Text2">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Value">Photon.ActorNrAt(loopindex)</param>
+                                        </action>
+                                        <action id="3" name="Set font size" sid="747137210376767" type="Text2">
+                                            <param id="0" name="Size (pt)">12*scale</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="973804802409659">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="614094894501808" type="System">
+                                    <param id="0" name="First value">Photon.ActorCount</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <variable constant="0" name="x" sid="280361322524848" static="0" type="number">157</variable>
+                                <variable constant="0" name="y" sid="842151169341528" static="0" type="number">75</variable>
+                                <variable constant="0" name="scale" sid="749521272850618" static="0" type="number">0.66</variable>
+                                <variable constant="0" name="x_offset" sid="482994932587788" static="0" type="number">-1</variable>
+                                <event-block sid="321111567998153">
+                                    <conditions>
+                                        <condition id="-12" name="Repeat" sid="649768921510864" type="System">
+                                            <param id="0" name="Count">4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="545634747855990">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="982231362039992" type="System">
+                                                    <param id="0" name="First value">loopindex+1</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Second value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="416857203662447" type="System">
+                                                    <param id="0" name="Variable">y</param>
+                                                    <param id="1" name="Value">169</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="695483758396432">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="851723717034072" type="System">
+                                                    <param id="0" name="First value">loopindex+1</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="486525841332155" type="System">
+                                                    <param id="0" name="Variable">x_offset</param>
+                                                    <param id="1" name="Value">-1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="158128907543553">
+                                            <conditions />
+                                            <actions>
+                                                <action id="-10" name="Add to" sid="114411475968474" type="System">
+                                                    <param id="0" name="Variable">x_offset</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="-3" name="Create object" sid="116473476279478" type="System">
+                                                    <param id="0" name="Object to create">Sprite2</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="X">x+(168*scale)*x_offset+(64*scale)</param>
+                                                    <param id="3" name="Y">y</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="705645064976896" type="Sprite2">
+                                                    <param id="0" name="Instance variable">ID</param>
+                                                    <param id="1" name="Value">Photon.ActorNrAt(loopindex)</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="286112483749573" type="Sprite2">
+                                                    <param id="0" name="Frame number">random(0, Self.AnimationFrameCount)</param>
+                                                </action>
+                                                <action id="9" name="Set scale" sid="792168591536277" type="Sprite2">
+                                                    <param id="0" name="Scale">scale</param>
+                                                </action>
+                                                <action id="-3" name="Create object" sid="214584889785293" type="System">
+                                                    <param id="0" name="Object to create">Sprite</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="X">x+(168*scale)*x_offset</param>
+                                                    <param id="3" name="Y">y</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="924111892546794" type="Sprite">
+                                                    <param id="0" name="Instance variable">ID</param>
+                                                    <param id="1" name="Value">Photon.ActorNrAt(loopindex)</param>
+                                                </action>
+                                                <action id="9" name="Set scale" sid="901050896518990" type="Sprite">
+                                                    <param id="0" name="Scale">scale</param>
+                                                </action>
+                                                <action id="-3" name="Create object" sid="776450294549662" type="System">
+                                                    <param id="0" name="Object to create">Text2</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="X">x+(168*scale)*x_offset</param>
+                                                    <param id="3" name="Y">y</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="740635211019414" type="Text2">
+                                                    <param id="0" name="Instance variable">ID</param>
+                                                    <param id="1" name="Value">Photon.ActorNrAt(loopindex)</param>
+                                                </action>
+                                                <action id="3" name="Set font size" sid="597212720127728" type="Text2">
+                                                    <param id="0" name="Size (pt)">12*scale</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="367684215640821">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="308683434497815" type="System">
+                                    <param id="0" name="First value">Photon.ActorCount</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <variable constant="0" name="x" sid="956250456642472" static="0" type="number">102</variable>
+                                <variable constant="0" name="y" sid="368695428028545" static="0" type="number">75</variable>
+                                <variable constant="0" name="scale" sid="828756416494093" static="0" type="number">0.66</variable>
+                                <variable constant="0" name="x_offset" sid="626250550404678" static="0" type="number">-1</variable>
+                                <event-block sid="445382789992263">
+                                    <conditions>
+                                        <condition id="-12" name="Repeat" sid="303709029920660" type="System">
+                                            <param id="0" name="Count">5</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="532008159099740">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="134178627118230" type="System">
+                                                    <param id="0" name="First value">loopindex+1</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Second value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="476276352375897" type="System">
+                                                    <param id="0" name="Variable">x</param>
+                                                    <param id="1" name="Value">157</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="898048616927877" type="System">
+                                                    <param id="0" name="Variable">y</param>
+                                                    <param id="1" name="Value">169</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="420078157845263">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="495622278086961" type="System">
+                                                    <param id="0" name="First value">loopindex+1</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">4</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="102323586228565" type="System">
+                                                    <param id="0" name="Variable">x_offset</param>
+                                                    <param id="1" name="Value">-1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="537862067853334">
+                                            <conditions />
+                                            <actions>
+                                                <action id="-10" name="Add to" sid="204233500902172" type="System">
+                                                    <param id="0" name="Variable">x_offset</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="-3" name="Create object" sid="697684184391535" type="System">
+                                                    <param id="0" name="Object to create">Sprite2</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="X">x+(168*scale)*x_offset+(64*scale)</param>
+                                                    <param id="3" name="Y">y</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="957265420943824" type="Sprite2">
+                                                    <param id="0" name="Instance variable">ID</param>
+                                                    <param id="1" name="Value">Photon.ActorNrAt(loopindex)</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="391279468461058" type="Sprite2">
+                                                    <param id="0" name="Frame number">random(0, Self.AnimationFrameCount)</param>
+                                                </action>
+                                                <action id="9" name="Set scale" sid="373228722693027" type="Sprite2">
+                                                    <param id="0" name="Scale">scale</param>
+                                                </action>
+                                                <action id="-3" name="Create object" sid="303456537237313" type="System">
+                                                    <param id="0" name="Object to create">Sprite</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="X">x+(168*scale)*x_offset</param>
+                                                    <param id="3" name="Y">y</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="965145365988311" type="Sprite">
+                                                    <param id="0" name="Instance variable">ID</param>
+                                                    <param id="1" name="Value">Photon.ActorNrAt(loopindex)</param>
+                                                </action>
+                                                <action id="9" name="Set scale" sid="843211566571508" type="Sprite">
+                                                    <param id="0" name="Scale">scale</param>
+                                                </action>
+                                                <action id="-3" name="Create object" sid="107140339226683" type="System">
+                                                    <param id="0" name="Object to create">Text2</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="X">x+(168*scale)*x_offset</param>
+                                                    <param id="3" name="Y">y</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="113606519603108" type="Text2">
+                                                    <param id="0" name="Instance variable">ID</param>
+                                                    <param id="1" name="Value">Photon.ActorNrAt(loopindex)</param>
+                                                </action>
+                                                <action id="3" name="Set font size" sid="608977028317880" type="Text2">
+                                                    <param id="0" name="Size (pt)">12*scale</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="284319469875990">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="724524225509917" type="System">
+                                    <param id="0" name="First value">Photon.ActorCount</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">6</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <variable constant="0" name="x" sid="416573357749052" static="0" type="number">102</variable>
+                                <variable constant="0" name="y" sid="188403484915886" static="0" type="number">75</variable>
+                                <variable constant="0" name="scale" sid="886602528112558" static="0" type="number">0.66</variable>
+                                <variable constant="0" name="x_offset" sid="709769487814054" static="0" type="number">-1</variable>
+                                <event-block sid="617260187854670">
+                                    <conditions>
+                                        <condition id="-12" name="Repeat" sid="240890010742064" type="System">
+                                            <param id="0" name="Count">6</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="943876140235285">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="783553174583720" type="System">
+                                                    <param id="0" name="First value">loopindex+1</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Second value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="734311260643253" type="System">
+                                                    <param id="0" name="Variable">y</param>
+                                                    <param id="1" name="Value">169</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="931365986085371">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="262956541633558" type="System">
+                                                    <param id="0" name="First value">loopindex+1</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">4</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="912749466785355" type="System">
+                                                    <param id="0" name="Variable">x_offset</param>
+                                                    <param id="1" name="Value">-1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="665426584363676">
+                                            <conditions />
+                                            <actions>
+                                                <action id="-10" name="Add to" sid="756549917897285" type="System">
+                                                    <param id="0" name="Variable">x_offset</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="-3" name="Create object" sid="417326765390437" type="System">
+                                                    <param id="0" name="Object to create">Sprite2</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="X">x+(168*scale)*x_offset+(64*scale)</param>
+                                                    <param id="3" name="Y">y</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="576448379691682" type="Sprite2">
+                                                    <param id="0" name="Instance variable">ID</param>
+                                                    <param id="1" name="Value">Photon.ActorNrAt(loopindex)</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="739925634877189" type="Sprite2">
+                                                    <param id="0" name="Frame number">random(0, Self.AnimationFrameCount)</param>
+                                                </action>
+                                                <action id="9" name="Set scale" sid="610281520029215" type="Sprite2">
+                                                    <param id="0" name="Scale">scale</param>
+                                                </action>
+                                                <action id="-3" name="Create object" sid="618660841332056" type="System">
+                                                    <param id="0" name="Object to create">Sprite</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="X">x+(168*scale)*x_offset</param>
+                                                    <param id="3" name="Y">y</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="783878903260942" type="Sprite">
+                                                    <param id="0" name="Instance variable">ID</param>
+                                                    <param id="1" name="Value">Photon.ActorNrAt(loopindex)</param>
+                                                </action>
+                                                <action id="9" name="Set scale" sid="761932260797809" type="Sprite">
+                                                    <param id="0" name="Scale">scale</param>
+                                                </action>
+                                                <action id="-3" name="Create object" sid="299918089170090" type="System">
+                                                    <param id="0" name="Object to create">Text2</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="X">x+(168*scale)*x_offset</param>
+                                                    <param id="3" name="Y">y</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="982269368352330" type="Text2">
+                                                    <param id="0" name="Instance variable">ID</param>
+                                                    <param id="1" name="Value">Photon.ActorNrAt(loopindex)</param>
+                                                </action>
+                                                <action id="3" name="Set font size" sid="263304221069594" type="Text2">
+                                                    <param id="0" name="Size (pt)">12*scale</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="550218764361600">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="660893912095000" type="System">
+                                    <param id="0" name="First value">Photon.ActorCount</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">7</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <variable constant="0" name="x" sid="439505355621524" static="0" type="number">67</variable>
+                                <variable constant="0" name="y" sid="330803943218747" static="0" type="number">75</variable>
+                                <variable constant="0" name="scale" sid="994707132917420" static="0" type="number">0.58</variable>
+                                <variable constant="0" name="x_offset" sid="758498876199668" static="0" type="number">-1</variable>
+                                <event-block sid="950621523393425">
+                                    <conditions>
+                                        <condition id="-12" name="Repeat" sid="708461124808642" type="System">
+                                            <param id="0" name="Count">7</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="916429781629900">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="918109400694397" type="System">
+                                                    <param id="0" name="First value">loopindex+1</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Second value">4</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="211273962560558" type="System">
+                                                    <param id="0" name="Variable">x</param>
+                                                    <param id="1" name="Value">116</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="620786741438436" type="System">
+                                                    <param id="0" name="Variable">y</param>
+                                                    <param id="1" name="Value">169</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="138472270991306">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="417839903734579" type="System">
+                                                    <param id="0" name="First value">loopindex+1</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">5</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="486481774953861" type="System">
+                                                    <param id="0" name="Variable">x_offset</param>
+                                                    <param id="1" name="Value">-1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="132049266038775">
+                                            <conditions />
+                                            <actions>
+                                                <action id="-10" name="Add to" sid="212571098023403" type="System">
+                                                    <param id="0" name="Variable">x_offset</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="-3" name="Create object" sid="480668898880292" type="System">
+                                                    <param id="0" name="Object to create">Sprite2</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="X">x+(168*scale)*x_offset+(64*scale)</param>
+                                                    <param id="3" name="Y">y</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="134970726128614" type="Sprite2">
+                                                    <param id="0" name="Instance variable">ID</param>
+                                                    <param id="1" name="Value">Photon.ActorNrAt(loopindex)</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="225911746086238" type="Sprite2">
+                                                    <param id="0" name="Frame number">random(0, Self.AnimationFrameCount)</param>
+                                                </action>
+                                                <action id="9" name="Set scale" sid="582978994873142" type="Sprite2">
+                                                    <param id="0" name="Scale">scale</param>
+                                                </action>
+                                                <action id="-3" name="Create object" sid="756200973168010" type="System">
+                                                    <param id="0" name="Object to create">Sprite</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="X">x+(168*scale)*x_offset</param>
+                                                    <param id="3" name="Y">y</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="840565046760717" type="Sprite">
+                                                    <param id="0" name="Instance variable">ID</param>
+                                                    <param id="1" name="Value">Photon.ActorNrAt(loopindex)</param>
+                                                </action>
+                                                <action id="9" name="Set scale" sid="675900176992739" type="Sprite">
+                                                    <param id="0" name="Scale">scale</param>
+                                                </action>
+                                                <action id="-3" name="Create object" sid="778266900024440" type="System">
+                                                    <param id="0" name="Object to create">Text2</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="X">x+(168*scale)*x_offset</param>
+                                                    <param id="3" name="Y">y</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="896679433283426" type="Text2">
+                                                    <param id="0" name="Instance variable">ID</param>
+                                                    <param id="1" name="Value">Photon.ActorNrAt(loopindex)</param>
+                                                </action>
+                                                <action id="3" name="Set font size" sid="215329006301370" type="Text2">
+                                                    <param id="0" name="Size (pt)">12*scale</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="666350750545166">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="586854505156856" type="System">
+                                    <param id="0" name="First value">Photon.ActorCount</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">8</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <variable constant="0" name="x" sid="455108618399733" static="0" type="number">67</variable>
+                                <variable constant="0" name="y" sid="405944456232059" static="0" type="number">75</variable>
+                                <variable constant="0" name="scale" sid="884780699297498" static="0" type="number">0.58</variable>
+                                <variable constant="0" name="x_offset" sid="269095280730438" static="0" type="number">-1</variable>
+                                <event-block sid="174504581679652">
+                                    <conditions>
+                                        <condition id="-12" name="Repeat" sid="832942273495898" type="System">
+                                            <param id="0" name="Count">8</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="335042018176130">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="850622517800748" type="System">
+                                                    <param id="0" name="First value">loopindex+1</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Second value">4</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="784565219509899" type="System">
+                                                    <param id="0" name="Variable">y</param>
+                                                    <param id="1" name="Value">169</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="802230548939941">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="575028501298315" type="System">
+                                                    <param id="0" name="First value">loopindex+1</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">5</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="185570301126801" type="System">
+                                                    <param id="0" name="Variable">x_offset</param>
+                                                    <param id="1" name="Value">-1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="193707221759141">
+                                            <conditions />
+                                            <actions>
+                                                <action id="-10" name="Add to" sid="547117697339164" type="System">
+                                                    <param id="0" name="Variable">x_offset</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="-3" name="Create object" sid="392231613868441" type="System">
+                                                    <param id="0" name="Object to create">Sprite2</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="X">x+(168*scale)*x_offset+(64*scale)</param>
+                                                    <param id="3" name="Y">y</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="121343958061753" type="Sprite2">
+                                                    <param id="0" name="Instance variable">ID</param>
+                                                    <param id="1" name="Value">Photon.ActorNrAt(loopindex)</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="781344472919355" type="Sprite2">
+                                                    <param id="0" name="Frame number">random(0, Self.AnimationFrameCount)</param>
+                                                </action>
+                                                <action id="9" name="Set scale" sid="390351309430645" type="Sprite2">
+                                                    <param id="0" name="Scale">scale</param>
+                                                </action>
+                                                <action id="-3" name="Create object" sid="647943527936564" type="System">
+                                                    <param id="0" name="Object to create">Sprite</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="X">x+(168*scale)*x_offset</param>
+                                                    <param id="3" name="Y">y</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="825924646492886" type="Sprite">
+                                                    <param id="0" name="Instance variable">ID</param>
+                                                    <param id="1" name="Value">Photon.ActorNrAt(loopindex)</param>
+                                                </action>
+                                                <action id="9" name="Set scale" sid="880387525372733" type="Sprite">
+                                                    <param id="0" name="Scale">scale</param>
+                                                </action>
+                                                <action id="-3" name="Create object" sid="467003968529705" type="System">
+                                                    <param id="0" name="Object to create">Text2</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="X">x+(168*scale)*x_offset</param>
+                                                    <param id="3" name="Y">y</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="170760476163242" type="Text2">
+                                                    <param id="0" name="Instance variable">ID</param>
+                                                    <param id="1" name="Value">Photon.ActorNrAt(loopindex)</param>
+                                                </action>
+                                                <action id="3" name="Set font size" sid="893979731498160" type="Text2">
+                                                    <param id="0" name="Size (pt)">12*scale</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="149411828688564">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="674327073879154" type="System">
+                                    <param id="0" name="First value">Photon.ActorCount</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">9</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <variable constant="0" name="x" sid="348155226276125" static="0" type="number">45</variable>
+                                <variable constant="0" name="y" sid="356019656258864" static="0" type="number">75</variable>
+                                <variable constant="0" name="scale" sid="142603335278244" static="0" type="number">0.5</variable>
+                                <variable constant="0" name="x_offset" sid="384771709069681" static="0" type="number">-1</variable>
+                                <event-block sid="879688176193930">
+                                    <conditions>
+                                        <condition id="-12" name="Repeat" sid="349742204762501" type="System">
+                                            <param id="0" name="Count">9</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="720160231315876">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="571522484484188" type="System">
+                                                    <param id="0" name="First value">loopindex+1</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Second value">5</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="331196533347157" type="System">
+                                                    <param id="0" name="Variable">x</param>
+                                                    <param id="1" name="Value">87</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="922864263263030" type="System">
+                                                    <param id="0" name="Variable">y</param>
+                                                    <param id="1" name="Value">169</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="719438575395689">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="352654680604771" type="System">
+                                                    <param id="0" name="First value">loopindex+1</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">6</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="992059119617797" type="System">
+                                                    <param id="0" name="Variable">x_offset</param>
+                                                    <param id="1" name="Value">-1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="981293717987022">
+                                            <conditions />
+                                            <actions>
+                                                <action id="-10" name="Add to" sid="992147029623132" type="System">
+                                                    <param id="0" name="Variable">x_offset</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="-3" name="Create object" sid="481351285596966" type="System">
+                                                    <param id="0" name="Object to create">Sprite2</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="X">x+(168*scale)*x_offset+(64*scale)</param>
+                                                    <param id="3" name="Y">y</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="760616562809924" type="Sprite2">
+                                                    <param id="0" name="Instance variable">ID</param>
+                                                    <param id="1" name="Value">Photon.ActorNrAt(loopindex)</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="141279430448882" type="Sprite2">
+                                                    <param id="0" name="Frame number">random(0, Self.AnimationFrameCount)</param>
+                                                </action>
+                                                <action id="9" name="Set scale" sid="906127456090664" type="Sprite2">
+                                                    <param id="0" name="Scale">scale</param>
+                                                </action>
+                                                <action id="-3" name="Create object" sid="682222724459227" type="System">
+                                                    <param id="0" name="Object to create">Sprite</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="X">x+(168*scale)*x_offset</param>
+                                                    <param id="3" name="Y">y</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="116692436632751" type="Sprite">
+                                                    <param id="0" name="Instance variable">ID</param>
+                                                    <param id="1" name="Value">Photon.ActorNrAt(loopindex)</param>
+                                                </action>
+                                                <action id="9" name="Set scale" sid="493262332115434" type="Sprite">
+                                                    <param id="0" name="Scale">scale</param>
+                                                </action>
+                                                <action id="-3" name="Create object" sid="463989330725813" type="System">
+                                                    <param id="0" name="Object to create">Text2</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="X">x+(168*scale)*x_offset</param>
+                                                    <param id="3" name="Y">y</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="519576917259605" type="Text2">
+                                                    <param id="0" name="Instance variable">ID</param>
+                                                    <param id="1" name="Value">Photon.ActorNrAt(loopindex)</param>
+                                                </action>
+                                                <action id="3" name="Set font size" sid="852838318544652" type="Text2">
+                                                    <param id="0" name="Size (pt)">12*scale</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="473898510292144">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="193540900490574" type="System">
+                                    <param id="0" name="First value">Photon.ActorCount</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">10</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <variable constant="0" name="x" sid="813100971697806" static="0" type="number">45</variable>
+                                <variable constant="0" name="y" sid="843306741051099" static="0" type="number">75</variable>
+                                <variable constant="0" name="scale" sid="638355488099736" static="0" type="number">0.5</variable>
+                                <variable constant="0" name="x_offset" sid="866559335550411" static="0" type="number">-1</variable>
+                                <event-block sid="836463908853759">
+                                    <conditions>
+                                        <condition id="-12" name="Repeat" sid="338052810787408" type="System">
+                                            <param id="0" name="Count">10</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="223157639716126">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="645031449381786" type="System">
+                                                    <param id="0" name="First value">loopindex+1</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Second value">5</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="433969631345383" type="System">
+                                                    <param id="0" name="Variable">y</param>
+                                                    <param id="1" name="Value">169</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="958606155866333">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="780966140228499" type="System">
+                                                    <param id="0" name="First value">loopindex+1</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">6</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="517436593533874" type="System">
+                                                    <param id="0" name="Variable">x_offset</param>
+                                                    <param id="1" name="Value">-1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="457956633756528">
+                                            <conditions />
+                                            <actions>
+                                                <action id="-10" name="Add to" sid="482903298943048" type="System">
+                                                    <param id="0" name="Variable">x_offset</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="-3" name="Create object" sid="595369925133467" type="System">
+                                                    <param id="0" name="Object to create">Sprite2</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="X">x+(168*scale)*x_offset+(64*scale)</param>
+                                                    <param id="3" name="Y">y</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="793230664166023" type="Sprite2">
+                                                    <param id="0" name="Instance variable">ID</param>
+                                                    <param id="1" name="Value">Photon.ActorNrAt(loopindex)</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="549693865236293" type="Sprite2">
+                                                    <param id="0" name="Frame number">random(0, Self.AnimationFrameCount)</param>
+                                                </action>
+                                                <action id="9" name="Set scale" sid="832277544045830" type="Sprite2">
+                                                    <param id="0" name="Scale">scale</param>
+                                                </action>
+                                                <action id="-3" name="Create object" sid="243323170786130" type="System">
+                                                    <param id="0" name="Object to create">Sprite</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="X">x+(168*scale)*x_offset</param>
+                                                    <param id="3" name="Y">y</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="415289128241151" type="Sprite">
+                                                    <param id="0" name="Instance variable">ID</param>
+                                                    <param id="1" name="Value">Photon.ActorNrAt(loopindex)</param>
+                                                </action>
+                                                <action id="9" name="Set scale" sid="826015860996148" type="Sprite">
+                                                    <param id="0" name="Scale">scale</param>
+                                                </action>
+                                                <action id="-3" name="Create object" sid="518427266281519" type="System">
+                                                    <param id="0" name="Object to create">Text2</param>
+                                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                                    <param id="2" name="X">x+(168*scale)*x_offset</param>
+                                                    <param id="3" name="Y">y</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="313826310552588" type="Text2">
+                                                    <param id="0" name="Instance variable">ID</param>
+                                                    <param id="1" name="Value">Photon.ActorNrAt(loopindex)</param>
+                                                </action>
+                                                <action id="3" name="Set font size" sid="807671017742218" type="Text2">
+                                                    <param id="0" name="Size (pt)">12*scale</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>0 - sync every frame (score and best)</comment>
+                <comment>1 - sync on join/leave (time and gamestate)</comment>
+                <comment>2 - on click</comment>
+                <event-block sid="256612461221182">
+                    <conditions>
+                        <condition id="3" name="On event" sid="271859498891770" type="Photon">
+                            <param id="0" name="Code">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="603440030931850">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="148892819188916" type="Sprite">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Photon.ActorNr</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="149543399639472" type="Sprite">
+                                    <param id="0" name="Instance variable">Score</param>
+                                    <param id="1" name="Value">int(tokenat(Photon.EventData, 0, &quot;|&quot;))</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="812969702804397" type="Sprite">
+                                    <param id="0" name="Instance variable">Best</param>
+                                    <param id="1" name="Value">int(tokenat(Photon.EventData, 1, &quot;|&quot;))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="406923701420167">
+                    <conditions>
+                        <condition id="3" name="On event" sid="316927858730244" type="Photon">
+                            <param id="0" name="Code">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="536360582395942">
+                            <conditions>
+                                <condition id="-8" inverted="1" name="Compare two values" sid="532217029496415" type="System">
+                                    <param id="0" name="First value">float(tokenat(Photon.EventData, 0, &quot;|&quot;))</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="920568534104844" type="Globals">
+                                    <param id="0" name="Instance variable">Time</param>
+                                    <param id="1" name="Value">float(tokenat(Photon.EventData, 0, &quot;|&quot;))</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="627416023301008" type="Globals">
+                                    <param id="0" name="Instance variable">TimeMax</param>
+                                    <param id="1" name="Value">float(tokenat(Photon.EventData, 2, &quot;|&quot;))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="945638701034418">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="132426253365423" type="System">
+                                    <param id="0" name="First value">tokenat(Photon.EventData, 1, &quot;|&quot;)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;Results&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="804270615626166" type="System">
+                                    <param id="0" name="Seconds">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="101359319978914" type="Globals">
+                                    <param id="0" name="Instance variable">Gamestate</param>
+                                    <param id="1" name="Value">&quot;Results&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="628161856630363">
+                    <conditions>
+                        <condition id="3" name="On event" sid="862259301182665" type="Photon">
+                            <param id="0" name="Code">2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="399717509789809">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="507075874698162" type="Sprite">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Photon.ActorNr</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="308160562490359" type="Sprite2">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Photon.ActorNr</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="3" name="Start" sid="511193206086455" type="Sprite">
+                                    <param id="0" name="From">1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="336542825024902" type="Sprite2">
+                                    <param id="0" name="Frame number">random(0, Self.AnimationFrameCount)</param>
+                                </action>
+                                <action id="0" name="Play" sid="726531085071490" type="Audio">
+                                    <param id="0" name="Audio file">sfx_chomp</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="905997406410427">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="767718791014358" type="System">
+                                            <param id="0" name="First value">int(random(0,50))</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="439853604931237" type="Audio">
+                                            <param id="0" name="Audio file">meatscruffy</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;1&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="441275853077083" title="Results">
+            <sub-events>
+                <variable constant="0" name="ready" sid="339553301233864" static="1" type="number">0</variable>
+                <variable constant="0" name="nexttimer" sid="332672529407354" static="1" type="number">0</variable>
+                <event-block sid="404064885093400">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="358188799798647" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="829393968631042" type="System">
+                            <param id="0" name="Variable">ready</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="112543320326025" type="System">
+                            <param id="0" name="Variable">nexttimer</param>
+                            <param id="1" name="Value">choose(5,10,10,15,20)</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="881302436768704" type="Globals">
+                            <param id="0" name="Instance variable">Time</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="113401866788824" type="Globals">
+                            <param id="0" name="Instance variable">ReadyPlayers</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="588182915911297" type="Audio">
+                            <param id="0" name="Audio file">sfx_victory</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="180573599637914" type="Text3" />
+                        <action id="0" name="Clear" sid="370972097994032" type="Array" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="257773873816618">
+                            <conditions>
+                                <condition id="-12" name="Repeat" sid="244238107384307" type="System">
+                                    <param id="0" name="Count">Photon.ActorCount</param>
+                                </condition>
+                                <condition id="-33" name="Pick by comparison" sid="241273997247529" type="System">
+                                    <param id="0" name="Object">Sprite</param>
+                                    <param id="1" name="Expression">Sprite.ID</param>
+                                    <param id="2" name="Comparison">0</param>
+                                    <param id="3" name="Value">Photon.ActorNrAt(loopindex)</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <variable constant="0" name="index" sid="746415320576763" static="0" type="number">0</variable>
+                                <variable constant="0" name="valid" sid="270661586241344" static="0" type="number">0</variable>
+                                <event-block sid="136101297275461">
+                                    <conditions>
+                                        <condition id="3" name="For each element" sid="752286053778129" type="Array">
+                                            <param id="0" name="Axes">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="606513116360767">
+                                            <conditions>
+                                                <condition id="1" name="Compare at XY" sid="867853000557101" type="Array">
+                                                    <param id="0" name="X">Array.CurX</param>
+                                                    <param id="1" name="Y">1</param>
+                                                    <param id="2" name="Comparison">2</param>
+                                                    <param id="3" name="Value">Sprite.Score+1</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="956274341710525" type="System">
+                                                    <param id="0" name="Variable">valid</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="587188692241351" type="System">
+                                                    <param id="0" name="Variable">index</param>
+                                                    <param id="1" name="Value">Array.CurX</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="217205709294287" type="System">
+                                                    <param id="0" name="Variable">valid</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="372238939716736">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="855307808187919" type="System">
+                                            <param id="0" name="Variable">valid</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="943920914104079">
+                                            <conditions>
+                                                <condition id="-10" name="For" sid="729304104161636" type="System">
+                                                    <param id="0" name="Name">&quot;&quot;</param>
+                                                    <param id="1" name="Start index">10</param>
+                                                    <param id="2" name="End index">index</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="3" name="Set at XY" sid="246081169938137" type="Array">
+                                                    <param id="0" name="X">loopindex(&quot;&quot;)</param>
+                                                    <param id="1" name="Y">0</param>
+                                                    <param id="2" name="Value">Array.At(loopindex(&quot;&quot;)-1,0)</param>
+                                                </action>
+                                                <action id="3" name="Set at XY" sid="176578133004949" type="Array">
+                                                    <param id="0" name="X">loopindex(&quot;&quot;)</param>
+                                                    <param id="1" name="Y">1</param>
+                                                    <param id="2" name="Value">Array.At(loopindex(&quot;&quot;)-1,1)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="357142563398423">
+                                            <conditions />
+                                            <actions>
+                                                <action id="3" name="Set at XY" sid="945723871833164" type="Array">
+                                                    <param id="0" name="X">index</param>
+                                                    <param id="1" name="Y">0</param>
+                                                    <param id="2" name="Value">Sprite.ID</param>
+                                                </action>
+                                                <action id="3" name="Set at XY" sid="342728167425773" type="Array">
+                                                    <param id="0" name="X">index</param>
+                                                    <param id="1" name="Y">1</param>
+                                                    <param id="2" name="Value">Sprite.Score</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <variable constant="0" name="counter" sid="956653823596731" static="0" type="number">-1</variable>
+                        <event-block sid="118933297469078">
+                            <conditions>
+                                <condition id="3" name="For each element" sid="292726117401227" type="Array">
+                                    <param id="0" name="Axes">2</param>
+                                </condition>
+                                <condition id="-33" name="Pick by comparison" sid="143550570792349" type="System">
+                                    <param id="0" name="Object">Sprite</param>
+                                    <param id="1" name="Expression">Sprite.ID</param>
+                                    <param id="2" name="Comparison">0</param>
+                                    <param id="3" name="Value">Array.At(Array.CurX,0)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="976845726782855" type="System">
+                                    <param id="0" name="Variable">counter</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="756398627863594" type="System">
+                                    <param id="0" name="Object to create">Text3</param>
+                                    <param id="1" name="Layer">&quot;Results&quot;</param>
+                                    <param id="2" name="X">0</param>
+                                    <param id="3" name="Y">48+(18*counter)</param>
+                                </action>
+                                <action id="0" name="Set text" sid="763320733502635" type="Text3">
+                                    <param id="0" name="Text">Photon.ActorNameByNr(Sprite.ID)</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="777579294349639" type="Text3">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Value">Sprite.ID</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="172564676473152" type="System">
+                                    <param id="0" name="Object to create">Text3</param>
+                                    <param id="1" name="Layer">&quot;Results&quot;</param>
+                                    <param id="2" name="X">125</param>
+                                    <param id="3" name="Y">48+(18*counter)</param>
+                                </action>
+                                <action id="0" name="Set text" sid="188349179062099" type="Text3">
+                                    <param id="0" name="Text">Sprite.Score</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="505082931257452" type="System">
+                                    <param id="0" name="Object to create">Text3</param>
+                                    <param id="1" name="Layer">&quot;Results&quot;</param>
+                                    <param id="2" name="X">215</param>
+                                    <param id="3" name="Y">48+(18*counter)</param>
+                                </action>
+                                <action id="0" name="Set text" sid="619756819537530" type="Text3">
+                                    <param id="0" name="Text">round((Sprite.Score / Globals.TimeMax)*100)/100</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="207199338074096" type="System">
+                                    <param id="0" name="Object to create">Text3</param>
+                                    <param id="1" name="Layer">&quot;Results&quot;</param>
+                                    <param id="2" name="X">305</param>
+                                    <param id="3" name="Y">48+(18*counter)</param>
+                                </action>
+                                <action id="0" name="Set text" sid="576488636375670" type="Text3">
+                                    <param id="0" name="Text">Sprite.Best</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>jank fix if someone joins during intermission</comment>
+                <event-block sid="958564382954662">
+                    <conditions>
+                        <condition id="15" name="On actor join" sid="301097104540757" type="Photon" />
+                    </conditions>
+                    <actions>
+                        <action id="17" name="Raise event" sid="427642575091105" type="Photon">
+                            <param id="0" name="Code">1</param>
+                            <param id="1" name="Data">Globals.Time&amp;&quot;|&quot;&amp;Globals.Gamestate&amp;&quot;|&quot;&amp;Globals.TimeMax</param>
+                            <param id="2" name="InterestGroup">0</param>
+                            <param id="3" name="Cache">0</param>
+                            <param id="4" name="Receivers">1</param>
+                            <param id="5" name="TargetActors">&quot;&quot;</param>
+                            <param id="6" name="WebForward">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="337339502679388">
+                    <conditions>
+                        <condition id="16" name="On actor leave" sid="767489182985673" type="Photon" />
+                    </conditions>
+                    <actions>
+                        <action id="17" name="Raise event" sid="641895046320077" type="Photon">
+                            <param id="0" name="Code">1</param>
+                            <param id="1" name="Data">Globals.Time&amp;&quot;|&quot;&amp;Globals.Gamestate&amp;&quot;|&quot;&amp;Globals.TimeMax</param>
+                            <param id="2" name="InterestGroup">0</param>
+                            <param id="3" name="Cache">0</param>
+                            <param id="4" name="Receivers">1</param>
+                            <param id="5" name="TargetActors">&quot;&quot;</param>
+                            <param id="6" name="WebForward">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="606945246991352">
+                    <conditions />
+                    <actions>
+                        <action id="-11" name="Add to" sid="819032001657711" type="Globals">
+                            <param id="0" name="Instance variable">Time</param>
+                            <param id="1" name="Value">dt</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="755179898513043">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="755770595034035" type="Text3">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">Photon.MyActorNr</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="755502179496973" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Flash" id="0" name="Flash" sid="726321164375326" type="Text3">
+                            <param id="0" name="&apos;On&apos; time">0.2</param>
+                            <param id="1" name="&apos;Off&apos; time">0.2</param>
+                            <param id="2" name="Duration">10</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="449354868885583">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="434183936329610" type="Text">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;time&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="882789181576266" type="Text">
+                            <param id="0" name="Text">&quot;Time: &quot;&amp;Globals.TimeMax</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="318079989732306">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="511303165099635" type="Text">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;ready&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="627919337094553" type="Text">
+                            <param id="0" name="Text">&quot;Ready - &quot;&amp;Globals.ReadyPlayers&amp;&quot;/&quot;&amp;Photon.ActorCount</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>10 - get readyplayers from host</comment>
+                <comment>11 - notify that you&apos;re ready (including yourself)</comment>
+                <event-block any="1" sid="134551857338096">
+                    <conditions>
+                        <condition id="14" name="On tap" sid="962796655663215" type="Touch" />
+                        <condition id="0" name="On click" sid="205989136844978" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="729957490475818">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="972865417322111" type="Globals">
+                                    <param id="0" name="Instance variable">Time</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0.5</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="112919526679255" type="System">
+                                    <param id="0" name="Variable">ready</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="17" name="Raise event" sid="996032692525962" type="Photon">
+                                    <param id="0" name="Code">11</param>
+                                    <param id="1" name="Data">0</param>
+                                    <param id="2" name="InterestGroup">0</param>
+                                    <param id="3" name="Cache">0</param>
+                                    <param id="4" name="Receivers">1</param>
+                                    <param id="5" name="TargetActors">&quot;&quot;</param>
+                                    <param id="6" name="WebForward">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="719635585260235" type="System">
+                                    <param id="0" name="Variable">ready</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="601058888061074">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="236062420482885" type="System">
+                            <param id="0" name="First value">Photon.MasterActorNr</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">Photon.MyActorNr</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="264621447325171">
+                            <conditions>
+                                <condition id="3" name="On event" sid="111390257133272" type="Photon">
+                                    <param id="0" name="Code">11</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Add to" sid="592964154231576" type="Globals">
+                                    <param id="0" name="Instance variable">ReadyPlayers</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="406806369356664">
+                            <conditions />
+                            <actions>
+                                <action id="17" name="Raise event" sid="776506778825155" type="Photon">
+                                    <param id="0" name="Code">10</param>
+                                    <param id="1" name="Data">Globals.ReadyPlayers&amp;&quot;|&quot;&amp;nexttimer</param>
+                                    <param id="2" name="InterestGroup">0</param>
+                                    <param id="3" name="Cache">0</param>
+                                    <param id="4" name="Receivers">0</param>
+                                    <param id="5" name="TargetActors">&quot;&quot;</param>
+                                    <param id="6" name="WebForward">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="458400881032535">
+                    <conditions>
+                        <condition id="3" name="On event" sid="513415598606480" type="Photon">
+                            <param id="0" name="Code">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="414265162665930" type="Globals">
+                            <param id="0" name="Instance variable">ReadyPlayers</param>
+                            <param id="1" name="Value">int(tokenat(Photon.EventData,0,&quot;|&quot;))</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="366094759075118" type="System">
+                            <param id="0" name="Variable">nexttimer</param>
+                            <param id="1" name="Value">int(tokenat(Photon.EventData,1,&quot;|&quot;))</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="708034128293140">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="516561875481493" type="Globals">
+                            <param id="0" name="Instance variable">ReadyPlayers</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">Photon.ActorCount</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="848213930678072" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="235730094940067" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="438710387196375" type="Globals">
+                            <param id="0" name="Instance variable">TimeMax</param>
+                            <param id="1" name="Value">nexttimer</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="975682708281203" type="Globals">
+                            <param id="0" name="Instance variable">Gamestate</param>
+                            <param id="1" name="Value">&quot;Game&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
