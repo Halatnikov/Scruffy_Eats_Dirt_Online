@@ -50,7 +50,7 @@
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
-        <prop name="Preview browser">NW.js</prop>
+        <prop name="Preview browser">(default)</prop>
         <prop name="Sampling">Point</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
@@ -185,7 +185,7 @@
             <properties>
                 <appid>ee3cbaca-e9b7-4c5a-a0ce-83dbe30e1294</appid>
                 <appversion>0.1.0</appversion>
-                <protocol>ws</protocol>
+                <protocol>wss</protocol>
                 <region>us</region>
                 <hosttype>Photon Cloud</hosttype>
                 <selfhostedaddress>localhost:9090</selfhostedaddress>
