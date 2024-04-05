@@ -92,7 +92,7 @@
                 <instance type="Text" uid="2">
                     <properties>
                         <text>version</text>
-                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-16</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
@@ -288,7 +288,7 @@
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
-                        <initial-frame>8</initial-frame>
+                        <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
@@ -297,8 +297,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>143</x>
-                        <y>-56</y>
+                        <x>133</x>
+                        <y>-42</y>
                         <z>0</z>
                         <width>64</width>
                         <height>64</height>
@@ -766,11 +766,10 @@
             <instance-variables>
                 <Gamestate>Menu</Gamestate>
                 <Time>0</Time>
+                <TimeMax>10</TimeMax>
                 <Score>0</Score>
                 <Best>0</Best>
                 <Humidity>37</Humidity>
-                <TimeMax>10</TimeMax>
-                <Nickname></Nickname>
                 <ReadyPlayers>0</ReadyPlayers>
             </instance-variables>
         </instance>

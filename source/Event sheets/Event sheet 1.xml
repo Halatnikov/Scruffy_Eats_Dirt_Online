@@ -176,17 +176,6 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="401102556614113">
-                    <conditions>
-                        <condition id="33" name="Is connected to a lobby" sid="242467501495091" type="Photon" />
-                        <condition id="-6" name="Every X seconds" sid="114109646094833" type="System">
-                            <param id="0" name="Interval (seconds)">5</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="41" name="Request lobby stats" sid="354773310443485" type="Photon" />
-                    </actions>
-                </event-block>
                 <event-block sid="466661470003716">
                     <conditions>
                         <condition id="-4" name="Trigger once while true" sid="300304569797344" type="System" />
@@ -225,7 +214,6 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="41" name="Request lobby stats" sid="479720109402739" type="Photon" />
                         <action id="3" name="Set enabled" sid="917267043111412" type="Button">
                             <param id="0" name="Mode">1</param>
                         </action>
@@ -256,16 +244,15 @@
                         <action id="101" name="Set my actor name" sid="864879842729635" type="Photon">
                             <param id="0" name="name">TextBox.Text</param>
                         </action>
-                        <action id="-10" name="Set value" sid="531451401242901" type="Globals">
-                            <param id="0" name="Instance variable">Nickname</param>
-                            <param id="1" name="Value">TextBox.Text</param>
-                        </action>
                         <action id="13" name="Join random room" sid="410497566571065" type="Photon">
                             <param id="0" name="MatchMyRoom">0</param>
                             <param id="1" name="MatchmakingMode">0</param>
                             <param id="2" name="LobbyName">&quot;&quot;</param>
                             <param id="3" name="LobbyType">0</param>
                             <param id="4" name="SqlLobbyFilter">&quot;&quot;</param>
+                        </action>
+                        <action id="4" name="Set enabled" sid="224650985209175" type="TextBox">
+                            <param id="0" name="Mode">0</param>
                         </action>
                         <action id="3" name="Set enabled" sid="504880129050052" type="Button">
                             <param id="0" name="Mode">0</param>
@@ -278,10 +265,15 @@
                 <event-block sid="159372389293515">
                     <conditions>
                         <condition id="23" name="On joinRandomRoom no match found" sid="835903026023668" type="Photon" />
+                        <condition id="-7" name="Compare instance variable" sid="577035884945801" type="TextBox">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;nickname&quot;</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="11" name="Create room" sid="476738628815551" type="Photon">
-                            <param id="0" name="Room">Globals.Nickname</param>
+                            <param id="0" name="Room">TextBox.Text</param>
                             <param id="1" name="LobbyName">&quot;&quot;</param>
                             <param id="2" name="LobbyType">0</param>
                         </action>
@@ -317,10 +309,6 @@
                         <condition id="-4" name="Trigger once while true" sid="194693476740122" type="System" />
                     </conditions>
                     <actions>
-                        <action id="0" name="Call function" sid="135943103977901" type="Function">
-                            <param id="0" name="Name">&quot;CreatePlayers&quot;</param>
-                            <param id="1" name="Parameter {n}"></param>
-                        </action>
                         <action id="-10" name="Set value" sid="196293639543227" type="Globals">
                             <param id="0" name="Instance variable">Humidity</param>
                             <param id="1" name="Value">37</param>
@@ -332,6 +320,10 @@
                         <action id="-10" name="Set value" sid="280105937178907" type="Globals">
                             <param id="0" name="Instance variable">Score</param>
                             <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Call function" sid="135943103977901" type="Function">
+                            <param id="0" name="Name">&quot;CreatePlayers&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
                         </action>
                         <action id="17" name="Raise event" sid="606377786012314" type="Photon">
                             <param id="0" name="Code">1</param>
@@ -423,7 +415,16 @@
                         </action>
                         <action id="-11" name="Add to" sid="543367293148304" type="Globals">
                             <param id="0" name="Instance variable">Time</param>
-                            <param id="1" name="Value">dt</param>
+                            <param id="1" name="Value">0.01666</param>
+                        </action>
+                        <action id="17" name="Raise event" sid="585968017485861" type="Photon">
+                            <param id="0" name="Code">0</param>
+                            <param id="1" name="Data">Globals.Score&amp;&quot;|&quot;&amp;Globals.Best</param>
+                            <param id="2" name="InterestGroup">0</param>
+                            <param id="3" name="Cache">0</param>
+                            <param id="4" name="Receivers">0</param>
+                            <param id="5" name="TargetActors">&quot;&quot;</param>
+                            <param id="6" name="WebForward">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -518,11 +519,6 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">&quot;score&quot;</param>
                         </condition>
-                        <condition id="-7" name="Compare instance variable" sid="634226925471093" type="Sprite">
-                            <param id="0" name="Instance variable">ID</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">Photon.MyActorNr</param>
-                        </condition>
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="521927343262803" type="Text">
@@ -544,26 +540,6 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="316433755071934">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="956774284514597" type="Sprite">
-                            <param id="0" name="Instance variable">ID</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">Photon.MyActorNr</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="17" name="Raise event" sid="585968017485861" type="Photon">
-                            <param id="0" name="Code">0</param>
-                            <param id="1" name="Data">Globals.Score&amp;&quot;|&quot;&amp;Globals.Best</param>
-                            <param id="2" name="InterestGroup">0</param>
-                            <param id="3" name="Cache">0</param>
-                            <param id="4" name="Receivers">0</param>
-                            <param id="5" name="TargetActors">&quot;&quot;</param>
-                            <param id="6" name="WebForward">0</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-block any="1" sid="726598718863784">
                     <conditions>
                         <condition id="14" name="On tap" sid="304136781417257" type="Touch" />
@@ -582,6 +558,10 @@
                             <param id="5" name="TargetActors">&quot;&quot;</param>
                             <param id="6" name="WebForward">0</param>
                         </action>
+                        <action id="-11" name="Add to" sid="488129302519285" type="Globals">
+                            <param id="0" name="Instance variable">Score</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                     </actions>
                     <sub-events>
                         <event-block sid="632220552412984">
@@ -598,10 +578,6 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-11" name="Add to" sid="488129302519285" type="Globals">
-                                    <param id="0" name="Instance variable">Score</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
                                 <action id="3" name="Start" sid="233569245707222" type="Sprite">
                                     <param id="0" name="From">1</param>
                                 </action>
@@ -1592,8 +1568,8 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <comment>0 - sync every frame (score and best)</comment>
-                <comment>1 - sync on join/leave (time and gamestate)</comment>
+                <comment>0 - sync every frame</comment>
+                <comment>1 - sync on join/leave</comment>
                 <comment>2 - on click</comment>
                 <event-block sid="256612461221182">
                     <conditions>
@@ -1966,7 +1942,7 @@
                     <actions>
                         <action id="-11" name="Add to" sid="819032001657711" type="Globals">
                             <param id="0" name="Instance variable">Time</param>
-                            <param id="1" name="Value">dt</param>
+                            <param id="1" name="Value">0.01666</param>
                         </action>
                     </actions>
                 </event-block>
@@ -2118,7 +2094,7 @@
                     <conditions>
                         <condition id="-7" name="Compare instance variable" sid="516561875481493" type="Globals">
                             <param id="0" name="Instance variable">ReadyPlayers</param>
-                            <param id="1" name="Comparison">0</param>
+                            <param id="1" name="Comparison">5</param>
                             <param id="2" name="Value">Photon.ActorCount</param>
                         </condition>
                         <condition id="-4" name="Trigger once while true" sid="848213930678072" type="System" />

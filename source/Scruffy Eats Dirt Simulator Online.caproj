@@ -2,7 +2,7 @@
 <c2project>
     <name>Scruffy Eats Dirt Simulator Online</name>
     <description></description>
-    <version>0.1.0</version>
+    <version>0.1.1</version>
     <author>Halatnikov</author>
     <author-email></author-email>
     <author-website>https://halatnikov.github.io</author-website>
@@ -50,7 +50,7 @@
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
-        <prop name="Preview browser">(default)</prop>
+        <prop name="Preview browser">NW.js</prop>
         <prop name="Sampling">Point</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
@@ -126,11 +126,10 @@
             <instance-variables>
                 <instance-variable name="Gamestate" sid="174820141202261" type="string" />
                 <instance-variable name="Time" sid="824442654617503" type="number" />
+                <instance-variable name="TimeMax" sid="779021750421864" type="number" />
                 <instance-variable name="Score" sid="231589758112636" type="number" />
                 <instance-variable name="Best" sid="738705786817155" type="number" />
                 <instance-variable name="Humidity" sid="942322277373126" type="number" />
-                <instance-variable name="TimeMax" sid="779021750421864" type="number" />
-                <instance-variable name="Nickname" sid="143478152096845" type="string" />
                 <instance-variable name="ReadyPlayers" sid="149214136771794" type="number" />
             </instance-variables>
         </object-type>
