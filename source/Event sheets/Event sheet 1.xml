@@ -2113,6 +2113,27 @@
                         </action>
                     </actions>
                 </event-block>
+                <comment>failsafe</comment>
+                <event-block sid="463357714193102">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="877065606633371" type="Globals">
+                            <param id="0" name="Instance variable">Time</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">10</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="753052948830925" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="204201805494303" type="Globals">
+                            <param id="0" name="Instance variable">TimeMax</param>
+                            <param id="1" name="Value">nexttimer</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="859731261857940" type="Globals">
+                            <param id="0" name="Instance variable">Gamestate</param>
+                            <param id="1" name="Value">&quot;Game&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
     </events>
