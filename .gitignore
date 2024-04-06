@@ -1,2 +1,26 @@
+###### IGNORE
 
-/source/browser_userdata
+# Construct 2 files
+#*.autosave
+*.backup1
+*.uistate.xml
+
+# Nw.js files
+/*.dll
+/*.log
+/*.exe
+/*.dat
+/*.bin
+/*.pak
+locales/
+swiftshader/
+
+browser_userdata/
+
+# Generic Windows files
+desktop.ini
+
+###### DO NOT IGNORE
+
+# A file to prevent ignoring of empty directories
+!*.empty
